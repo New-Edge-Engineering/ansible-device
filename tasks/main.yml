@@ -1,0 +1,8 @@
+---
+- name: hardening ubuntu fstab
+  lineinfile: >
+    dest=/etc/fstab
+    line="tmpfs     /dev/shm     tmpfs     defaults,noexec,nosuid     0     0"
+
+# REFERENCES:
+# Ubuntu step 2 hardening from http://www.thefanclub.co.za/how-to/how-secure-ubuntu-1204-lts-server-part-1-basics
